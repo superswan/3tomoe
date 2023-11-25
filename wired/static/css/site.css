@@ -1,0 +1,159 @@
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+  font-size:12pt;
+
+  line-height: 1.5;
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 0 10px;
+  word-wrap: break-word;
+  color: #999999;
+  /*color: var(--text-main);*/
+  background: #1E1E1E;
+  /*background: var(--background-body);*/
+  text-rendering: optimizeLegibility;
+}
+
+/* Center Page */
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px;
+}
+
+.main-section {
+  height: 100%;
+  padding-bottom: 5%;
+}
+
+/* UI & Buttons */
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #333333;
+  font-weight: bold;
+  color: #999999;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: rgb(99, 99, 99);
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  background-color: rgb(22, 22, 22);
+}
+
+.collapsible:after {
+  content: 	"\21F1"; /* Unicode character fo:width:  "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: '\21F2'; /* Unicode character for "minus" sign (-) */
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+/* MAIN LINKS SECTION */
+ul {  
+    list-style-type: none;
+}
+
+a {
+    overflow: auto;
+    text-decoration: none;
+    font-weight: bold;
+    color: #08c44d;
+    /*color: var(--links);*/
+}
+
+.links{
+  padding-bottom: 25px;
+  min-width: 30% !important;
+  color: #AAAAAA;
+  position: relative;
+  background-color: #333333;
+  max-width: 960px; 
+    border-radius: 30px;
+    width: auto;
+    height: auto; 
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    --webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+    --moz-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+    z-index: 2;
+}
+
+input {
+    color: #fff !important;
+    /*color: var(--form-text);*/
+    background-color: #181818 !important;
+    /*background-color: var(--background);*/
+    font-family: inherit;
+    font-size: inherit;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+  }
+
+  #srch {
+      position: relative;
+      left: 35px;
+  }
+
+  .random {
+    position: absolute;
+    right: 35px
+  }
+ 
+  button.random {
+    color:#999999;
+    background-color: #181818;
+    /*background-color: var(--background);*/
+    font-family: inherit;
+    font-size: inherit;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+  }
+
+  button, select, input[type='submit'], input[type='button'], input[type='checkbox'], input[type='range'], input[type='radio'] {
+    cursor: pointer;
+  }
+
+  footer {
+    padding-top: 20px;
+    margin: auto;
+    position: relative;
+    max-width: 100%;
+    bottom: 0px;
+  }
+
+  /* SITE THEMES */
+
